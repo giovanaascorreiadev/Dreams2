@@ -1,0 +1,641 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+}
+
+
+body {
+
+    background-color: #fceef5;
+
+    color: #6b123d;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+.cabecalho {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px 8%;
+
+    background-color: white;
+
+    border-bottom: 2px solid #f5b6d2;
+
+}
+
+
+.logo {
+
+    width: 100px;
+
+    height: auto;
+
+}
+
+
+.cabecalho nav {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.cabecalho a {
+
+    color: #6b123d;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+}
+
+
+.cabecalho a:hover {
+
+    color: #d92e78;
+
+}
+
+
+
+
+
+.apresentacao {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 70px 8%;
+
+    min-height: 550px;
+
+}
+
+
+.apresentacao>* {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+.texto-apresentacao {
+
+    max-width: 600px;
+
+}
+
+
+.pequeno {
+
+    color: #d92e78;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+
+}
+
+
+h1 {
+
+    font-size: 58px;
+
+    color: #6b123d;
+
+    margin-bottom: 20px;
+
+}
+
+
+.apresentacao p:not(.pequeno) {
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+
+}
+
+
+.botao {
+
+    display: inline-block;
+
+    background-color: #d92e78;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.botao:hover {
+
+    background-color: #6b123d;
+
+}
+
+
+.imagem-apresentacao {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.imagem-apresentacao img {
+
+    width: 600px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    animation: flutuar 3s ease-in-out infinite;
+
+}
+
+
+@keyframes flutuar {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+}
+
+
+
+
+
+.sonhos {
+
+    text-align: center;
+
+    padding: 70px 8%;
+
+    background-color: white;
+
+}
+
+
+h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+
+    color: #6b123d;
+
+}
+
+
+.descricao {
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.card {
+
+    background-color: #fceef5;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 2px solid #f5b6d2;
+
+    transition: transform 0.3s;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.card.destaque {
+
+    background-color: #f5b6d2;
+
+}
+
+
+.icone {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card p {
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    min-height: 80px;
+
+}
+
+
+.card h4 {
+
+    color: #d92e78;
+
+    font-size: 25px;
+
+    margin: 20px 0;
+
+}
+
+
+.botao-card {
+
+    display: inline-block;
+
+    background-color: #d92e78;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 7px;
+
+}
+
+
+.botao-card:hover {
+
+    background-color: #6b123d;
+
+}
+
+
+
+
+.funciona {
+
+    text-align: center;
+
+    padding: 70px 8%;
+
+}
+
+
+.etapas {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 40px;
+
+}
+
+
+.etapa {
+
+    flex: 1;
+
+    max-width: 300px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+}
+
+
+.numero {
+
+    background-color: #d92e78;
+
+    color: white;
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    font-weight: bold;
+
+}
+
+
+.etapa h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.etapa p {
+
+    line-height: 1.5;
+
+}
+
+
+
+
+
+.depoimentos {
+
+    background-color: white;
+
+    text-align: center;
+
+    padding: 70px 8%;
+
+}
+
+
+.comentarios {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+}
+
+
+.comentario {
+
+    background-color: #fceef5;
+
+    border: 2px solid #f5b6d2;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    max-width: 450px;
+
+}
+
+
+.comentario p {
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+}
+
+
+.comentario h3 {
+
+    color: #d92e78;
+
+}
+
+
+
+
+
+.final {
+
+    text-align: center;
+
+    padding: 70px 8%;
+
+}
+
+
+.final img {
+
+    width: 150px;
+
+    max-width: 100%;
+
+    animation: flutuar 3s ease-in-out infinite;
+
+}
+
+
+.final h2 {
+
+    margin-top: 20px;
+
+}
+
+
+.final p {
+
+    font-size: 19px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+footer {
+
+    background-color: #6b123d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+footer p {
+
+    margin: 5px;
+
+}
+
+
+
+
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+
+        flex-direction: column;
+
+    }
+
+
+    .cabecalho nav {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 10px;
+
+    }
+
+
+    .apresentacao {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 6%;
+
+    }
+
+
+    h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .etapas {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .etapa {
+
+        width: 100%;
+
+    }
+
+
+    .comentarios {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .comentario {
+
+        width: 100%;
+
+    }
+
+}
